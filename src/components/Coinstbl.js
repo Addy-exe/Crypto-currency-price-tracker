@@ -24,7 +24,7 @@ export default function Coinstbl() {
     const [coins, setCoins] = useState([]);
     const [loading, setLoading] = useState(false);
     const [search, setSearch] = useState("");
-    // const [page, setPage] = useState(1);
+    const [page, setPage] = useState(1);
 
 
     const useStyles = makeStyles({
