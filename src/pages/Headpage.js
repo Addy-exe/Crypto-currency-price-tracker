@@ -1,14 +1,16 @@
 import React from 'react';
 import Banner from '../components/Banner';
 import Coinstbl from '../components/Coinstbl';
+import { Outlet } from 'react-router-dom';
 
 
 const Headpage = () => {
     return (
-        <div>
-            <Banner/>
-            <Coinstbl/>
-        </div>
+        <>
+            <Banner />
+            <Coinstbl />
+            <Outlet/>
+        </>
     )
 }
 

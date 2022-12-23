@@ -3,7 +3,7 @@ import axios from 'axios';
 import { React , useState , useEffect } from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import { TrendingCoins } from '../config/api';
-// import { Link } from 'react-router-dom';
+import { numberWithCommas } from './NumberWithComma';
 
 const useStyles = makeStyles(() => ({
     container: {
@@ -20,9 +20,6 @@ const useStyles = makeStyles(() => ({
     }
 }))
 
-function numberWithCommas(n){
-    return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
 
 const Carousel = () => {
 
@@ -34,8 +31,6 @@ const Carousel = () => {
         const { data } = await axios.get(TrendingCoins("INR"));
         setTrending(data);
     }
-
-    console.log(trending);
 
     useEffect(() => {
         fetchTrendingCoins();
@@ -84,9 +79,7 @@ const Carousel = () => {
                 responsive={responsive}
                 autoPlay
                 items={items}
-            >
-
-            </AliceCarousel>
+            />
         </div>
     )
 }

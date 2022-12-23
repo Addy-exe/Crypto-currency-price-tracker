@@ -6,10 +6,10 @@ import Carousel from './Carousel';
 
 const useStyles = makeStyles(() => ({
     banner:{
-        backgroundImage: "url(./bgimage1.jpg)",
+        backgroundColor: '#161b22'  
     },
     bannerContent:{
-        height: 300,
+        height: 320,
         display: "flex",
         flexDirection: "column",
         paddingTop: 10,
@@ -20,7 +20,7 @@ const useStyles = makeStyles(() => ({
         height: "40%",
         flexDirection: "column",
         justifyContent: "center",
-        textAlign: "center"
+        textAlign: "center",
     }
 }))
 
@@ -40,7 +40,7 @@ const Banner = () => {
                             color: "white"
                         }}
                     >
-                        Cryptogenic     
+                        Cryptoverse    
                     </Typography>
                     <Typography
                         style={{
