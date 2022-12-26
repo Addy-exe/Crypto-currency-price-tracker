@@ -50,6 +50,11 @@ const useStyles = makeStyles(() => ({
     fontSize: 14,
     letterSpacing: 1,
     color: 'darkgrey'
+  },
+  info:{
+    margin: 14,
+    height: '100%',
+    width: '25%',
   }
 }))
 
@@ -82,7 +87,7 @@ const CoinDetails = () => {
       {coinInfo ? (
         <div className={classes.details} onClick={(e) => e.stopPropagation()}>
 
-          <div style={{ margin: 14 , height: '100%' , width: '25%'}}>
+          <div className={classes.info}>
 
             <div className={classes.titleBox}>
               <img src={coinInfo.image.large} style={{ width: 90, height: 90 }} alt={coinInfo.id} />

@@ -63,7 +63,13 @@ const CoinGraph = ({ id }) => {
     return (
         <div className={classes.container}>
             {!historicData ? (
-                <CircularProgress />
+                <CircularProgress
+                    style={{
+                        position: 'relative',
+                        left: '50%',
+                        top: '50%'
+                    }}
+                />
             ) : (
                 <div style={{
                     height: '100%',
@@ -107,7 +113,7 @@ const CoinGraph = ({ id }) => {
                                         color: 'white',
                                         width: 140,
                                         borderColor: 'white',
-                                        backgroundColor: selected ? '#77bdfb':'',
+                                        backgroundColor: selected ? '#77bdfb' : '',
                                         transition: '0.7s',
                                     }}
                                     onClick={() => setDays(val.value)}
