@@ -12,7 +12,7 @@ Web application to search and find the marketcap of a cryptocurrency using CoinG
 
 ## Screenshots
 
-![App Screenshot](https://user-images.githubusercontent.com/70509358/179390740-2fce1df0-047b-4265-8952-2c9446376c6f.PNG)
+![App Screenshot](https://user-images.githubusercontent.com/70509358/209526714-9a7f951c-a0fc-4bee-a26d-3cc878679559.jpg)
 
 
 ## Run Locally
