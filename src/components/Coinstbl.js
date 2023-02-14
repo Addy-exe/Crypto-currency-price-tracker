@@ -119,7 +119,6 @@ export default function Coinstbl() {
                                                 key={row.name}
                                                 onClick={() => navigate(`/${row.id}`)}
                                             >
-
                                                 <TableCell
                                                     component="th"
                                                     scope="row"
